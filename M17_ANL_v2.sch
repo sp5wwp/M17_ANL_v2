@@ -1565,7 +1565,7 @@ Wire Notes Line width 10 style solid
 Wire Notes Line width 10 style solid
 	4500 6850 6100 6850
 Text Notes 4650 7150 0    157  ~ 0
-LED Diodes
+Diodes
 Text GLabel 4950 7650 0    50   Input ~ 0
 PWR_LED
 Text GLabel 4950 7550 0    50   Input ~ 0
