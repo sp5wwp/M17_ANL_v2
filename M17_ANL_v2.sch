@@ -5,9 +5,9 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "M17_ANL"
-Date ""
+Date "2019-12-29"
 Rev "v2"
-Comp "Nikoloz Glonti"
+Comp "Nikoloz Glonti / NG91 / SO3ALG"
 Comment1 "SiModeM v2"
 Comment2 "DRAFT! Not released Yet"
 Comment3 ""
