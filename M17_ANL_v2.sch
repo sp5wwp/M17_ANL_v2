@@ -2977,4 +2977,8 @@ $EndComp
 Connection ~ 7250 7850
 Wire Wire Line
 	7250 7850 7350 7850
+Wire Wire Line
+	13100 8500 13050 8500
+Text Notes 1950 9500 0    50   ~ 0
+R25 and R26 values\nwill be defined after\nprototyping
 $EndSCHEMATC
