@@ -1060,10 +1060,10 @@ Wire Notes Line width 10 style solid
 Text Notes 6450 5400 0    168  ~ 0
 Power converter
 $Comp
-L Regulator_Linear:AP1117-33 U2
+L Regulator_Linear:AP1117-33 U3
 U 1 1 5E3092A8
 P 7350 5900
-F 0 "U2" H 7350 6142 50  0000 C CNN
+F 0 "U3" H 7350 6142 50  0000 C CNN
 F 1 "AP1117-33" H 7350 6051 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7350 6100 50  0001 C CNN
 F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 7450 5650 50  0001 C CNN
@@ -2664,10 +2664,10 @@ $EndComp
 Wire Wire Line
 	8350 3650 8150 3650
 $Comp
-L RFElements:ADF7021-VBCPZ-RL IC1
+L RFElements:ADF7021-VBCPZ-RL U2
 U 1 1 5DF32167
 P 10750 3100
-F 0 "IC1" H 11650 2000 50  0000 L CNN
+F 0 "U2" H 11650 2000 50  0000 L CNN
 F 1 "ADF7021" H 11550 1900 50  0000 L CNN
 F 2 "RFElements:ADF7021" H 12400 3600 50  0001 L CNN
 F 3 "https://www.arrow.com/en/products/adf7021-vbcpz-rl/analog-devices" H 12400 3500 50  0001 L CNN
