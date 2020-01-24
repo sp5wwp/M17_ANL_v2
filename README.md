@@ -33,7 +33,8 @@ However M17_ANL_v2 can be used to receive and transmit raw digital data - it's b
 | TP13  | FMDM  | to Filter 1  | 33 |
 | TP14  | FMM  | from Filter 2  | 21 |
 
-Filter 1 - used by ADC
+Filter 1 - used by ADC,
+
 Filter 2 - used by DAC
 
 
