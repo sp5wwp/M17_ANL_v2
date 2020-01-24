@@ -9,6 +9,17 @@ Diagram was not tested yet.
 M17_ANL_v2 is a radio modem designed especially to support interaction with existing M17 capable radio terminals & repeaters. It also means packet acquisition, for debugging cases or sniffing, just for fun idk.
 However M17_ANL_v2 can be used to receive and transmit raw digital data - it's by design protocol agnostic. 
 
+### Parameters
+
+* Operating freqency range is 420MHz to 450MHz (after a few changes also another frequency bands)
+* Modulation schemes selectable - 2FSK, 3FSK, 4FSK, MSK and FM (for M17 - 4FSK)
+* Output power level is set from -16dbm up to 10dbm (in 0.3125 dB steps)
+* Data rate is set from 0.05 up to 25 kbps (for M17 - 9600 bps)
+* IF filter bandwidht selectable - 12.5 kHz, 18.75 kHz, or 25 kHz
+
+MORE TODO
+
+
 ### Most important ICs used in project
 
 * STM32F303CBT6 - MCU which controls data flow(PC <-> RF TRX), and radio parameters.
@@ -36,4 +47,4 @@ However M17_ANL_v2 can be used to receive and transmit raw digital data - it's b
 Filter 1 - used by ADC,
 Filter 2 - used by DAC
 
-
+MORE TODO
