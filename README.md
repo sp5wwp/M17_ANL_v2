@@ -2,13 +2,16 @@
 New M17 hotspot/analyser, this time with ADF7021
 
 ## Schematic
-Diagram was not tested Yet.
+Diagram was not tested yet.
 
 ## Technical details
 
+M17_ANL_v2 is a radio modem designed especially to support interaction with existing M17 capable radio terminals & repeaters. It also means packet acquisition, for debugging cases or sniffing, just for fun idk.
+However M17_ANL_v2 can be used to receive and transmit raw digital data - it's by design protocol agnostic. 
+
 ### Most important ICs used in project
 
-* STM32F303CBT6 - MCU which controls data flow, and radio parameters.
+* STM32F303CBT6 - MCU which controls data flow(PC <-> RF TRX), and radio parameters.
 * ADF7021 - radio transceiver.
 
 ### Testpoints description
@@ -29,5 +32,8 @@ Diagram was not tested Yet.
 | TP12  | DA  | PA4  | to Filter 2 |
 | TP13  | FMDM  | to Filter 1  | 33 |
 | TP14  | FMM  | from Filter 2  | 21 |
+
+Filter 1 - used by ADC
+Filter 2 - used by DAC
 
 
