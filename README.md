@@ -3,6 +3,7 @@ New M17 hotspot/analyser, this time with ADF7021
 
 ## Schematic
 Diagram was not tested yet.
+However, schematic and PCB layout is still work in progress.
 
 ## Technical details
 
@@ -11,11 +12,16 @@ However M17_ANL_v2 can be used to receive and transmit raw digital data - it's b
 
 ### Parameters
 
-* Operating freqency range is 420MHz to 450MHz (after a few changes also another frequency bands)
+* Operating freqency range is 420MHz to 450MHz (M17 operates within amateur frequency band 430-440MHz) - after a few changes of RF elements values also another frequency bands
 * Modulation schemes selectable - 2FSK, 3FSK, 4FSK, MSK and FM (for M17 - 4FSK)
 * Output power level is set from -16dbm up to 10dbm (in 0.3125 dB steps)
 * Data rate is set from 0.05 up to 25 kbps (for M17 - 9600 bps)
-* IF filter bandwidht selectable - 12.5 kHz, 18.75 kHz, or 25 kHz
+* IF filter bandwidth selectable - 12.5 kHz, 18.75 kHz, or 25 kHz
+* Configuration, transmit and receive by AT commands - over USB-CDC
+* All registers of ADF7021 also configurable by manual mode
+* Additional 4 GPIOs - first pair can be used as I2C interface, second can be UART
+* Four different colour LEDs - PWR, SYS, RX and TX - indicate the state of the device
+* Programmable by SWD interface
 
 MORE TODO
 
@@ -48,3 +54,29 @@ Filter 1 - used by ADC,
 Filter 2 - used by DAC
 
 MORE TODO
+
+### Headers description
+
+
+| Header  | Pin | Pin of STM32 | Use case |
+| ------------- | ------------- | ------------- | ------------- |
+| J4  | 1  | GND  | X |
+| J4  | 2  | PB9  | GPIO, I2C_SDA |
+| J4  | 3  | PB8  | GPIO, I2C_SCK |
+| J4  | 4  | PB7  | GPIO, USART_RX |
+| J4  | 5  | PB6  | GPIO, USART_TX |
+| J4  | 6  | VCC  | X |
+| ------------- | ------------- | ------------- | ------------- |
+| J3  | 1  | NRST  | RST |
+| J3  | 2  | GND  | X |
+| J3  | 3  | PA13  | SWDIO |
+| J3  | 4  | PA14  | SWCLK |
+| J3  | 5  | VCC  | X |
+
+
+
+
+
+## Control software
+
+TODO
